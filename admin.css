@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color: #34AB5B;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 70%;
+    text-align: center;
+
+}
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'DM Sans', sans-serif;
+
+}
+.forms input{
+    border: none;
+    background-color: transparent;
+    width: 100%; 
+    font-size: 15px;
+    outline: none;
+    color: white;
+  
+}
+::placeholder{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.admindetails{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.admindetails h1{
+    margin-bottom: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.adminid,.password{
+    width: 100%;
+    margin: 25px 0px;
+    width: 320px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #B8ABA4;
+    display: flex;
+    justify-content: initial;
+}
+
+.forms img{
+    margin-right: 20px;
+}
+.forgot{
+    width: 100%;
+    text-align: right;
+}
+ a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.button{
+    margin-top: 25px;
+    width: 228px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    /* -webkit-box-shadow: 0 0 1em 0 rgb(131 135 137 / 25%); */
+    -webkit-box-shadow: 0 0 1em 0 rgba(255, 255, 255, 50%);
+
+}
+.button a{
+    color: #34AB5B;
+    font-weight: 500;
+    font-size:15px;
+}
+
