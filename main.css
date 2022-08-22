@@ -36,7 +36,6 @@ header{
 .navbar img{
     height: 100px;
     width: 100px;
-    background-color: ;
 }
 .navbar a{
     color: white;
@@ -53,7 +52,6 @@ header{
     justify-content: center;
     text-align: center;
     height: auto;
-    padding: ;
 }
 .writings{
     padding: 0px 150px;
