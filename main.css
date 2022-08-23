@@ -95,8 +95,9 @@ span{
 
 
 header{
-    
-    background-image: url('./Images/slider.jpeg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/help.jpeg);    
+
+    /* background-image: url('../mabinas2/images/slider.jpeg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
