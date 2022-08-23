@@ -5,53 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Mabinas</title>
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <div class="container">
-                <nav class="navbar">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="">
-                    </div>
-                    <div class="menuitems">
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Info</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Help Center</a></li>
-                        </ul>
-                    </div>
-                </nav>
+    <header id = "backgroundchanger">
+        <div class="sticky">
+            <div class="nav">
+                <div class="container">
+                    <nav class="navbar">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <div class="menuitems">
+                            <ul>
+                                <li><a href="#contactinfo">Contact Info</a></li>
+                                <li><a href="documents/Privacy Policy.pdf">Privacy Policy</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#help">Help Center</a></li>
+                                <li><a href="#" onclick="aboutDropdown()" >About Us <img id="arrow" src="images/arrow1.svg" height="10px" width="10px" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="aboutdropdown" style="display: none;" id = "about">
+                <div class="container">
+                    <ul>
+                        <li onclick="Mission()">Mission</li>
+                        <li onclick="values()">Values</li>
+                        <li>Management</li>
+                        <li>Board of Directors</li>
+                    </ul>
+    
+                </div>
+            </div> 
+        </div>
+    
+        <div class="popbox" id="popbox" style="display: none;">
+            <div class="mission">
+                <h3>MISSION</h3>
+                <p>To Empower Micro And Small Enterprises, Groups And Individual Within The Market Area We Serve By Providing Value Adding Financing Solutions Through Professional And Highly Motivated Work Force.</p>
+                <h3>VISION</h3>
+                <p>
+                    To Be The Most Effective And Reliable Customer Friendly Microfinance Service Provider
+                </p>
             </div>
         </div>
+        <div class="popbox2" id="popbox2" style="display:none ;">
+            <div class="values">
+                <h3>CORE VALUES</h3>
+                <p>
+                    At <span>Mabinas</span> Microfinance Bank, our values play a vital role in our decision making processes. 
+                    They are the bedrock of our culture and they form the keystone for all we do and accomplish.
+                    Our values define who we are, what we do, how we see ourselves and how we want others to see us. 
+                    They define how we function as a team in alleviating poverty and reaching out to the under banked in the society and they are: 
+                    <ul>
+                        <li>Passion for Customers</li>
+                        <li>Adaptability</li>
+                        <li>Approachable</li>
+                        <li>Reason</li>
+                        <li>Integrity</li>
+                    </ul>
+                     
+                     
+                     
+                     
+                     
+                </p>
+            </div>
+        </div>
+
         <main>
-            <div class="intro">
+            <div class="intro animate__animated animate__fadeIn" id="intro">
                 <div class="container">
-                    <div class="writings">
+                    <div class="writings animate__animated animate__fadeIn" id = "slider1">
                         <h1>IMPORTANT NOTICE</h1>
                         <h3> 
-                            Mabinas Microfinance bank has recently complied with the Nigerian Data Protection Regulation act to increase our data protection
+                            <span>Mabinas</span> Microfinance bank has recently complied with the Nigerian Data Protection Regulation act to increase our data protection
+                        </h3>
+                
+                    </div>
+                    <div class="writings animate__animated animate__fadeIn" id="slider2">
+                        <h3> 
+                            All consultants and services of <span>Mabinas</span> must also comply with the same privacy obligations as required of Mabinas
+                            For more information on how this affects you, click on Privacy policy above                        
                         </h3>
                     </div>
+                    <div class="writings animate__animated animate__fadeIn"  id = "slider3">
+                        <h1> NOTICE</h1>
+                        <h3> 
+                           <span>Mabinas Microfinance bank</span> has recently complied with the Nigerian Data Protection Regulation act to increase our data protection
+                        </h3>
+                    </div>
+                    <div class="buttons">
+                        <div id="button1" onclick="changer1()" ondragover="changer1()">
+                        </div>
+                        <div id="button2" onclick="changer2()">
+                        </div>
+                        <div id="button3" onclick="changer3()">
+                        </div>
+                    </div>
+                   
                 </div>
+
             </div>
         </main>
     </header>
-    <div class="contactinfo">
+    <div class="contactinfo" id="contactinfo">
         <div class="container">
             <div class="visitus">
                 <h2>Visit Us</h2>
                 <img src="images/visit.png" alt="">
-                <p>F73/74, Mangal Plaza, Central Market, Off Ahmadu Bello Way, Kaduna, Kaduna, Nigeria</p>
+                <p>No 7/9 Doka Crescent, Off Bank Road, Abakpa, Kaduna</p>
             </div>
             <div class="divider"></div>
             <div class="contactus">
                 <h2>Contact Us</h2>
                 <img src="images/telephone.png" alt="">
-                <p>08033141051 08069623676</p>
+                <p>07037008541</p>
                 <img src="images/mail.png" alt="">
                 <p>mabinasmfb@yahoo.com</p>
 
@@ -61,7 +133,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.1762137806586!2d7.428948658887157!3d10.54145447581391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b2cbca00e6afad%3A0xdd8cfc9f0384acd8!2sMabinas%20Microfinance%20Bank!5e0!3m2!1sen!2sng!4v1661158965068!5m2!1sen!2sng"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-        <section class="services">
+        <section class="services" id = "services">
             <div class="container">
                 <div class="header">
                     <h1>Services</h1>
@@ -101,7 +173,7 @@
             </div>
            
         </section>
-        <section class="help">
+        <section class="help" id = "help"> 
             <div class="container">
                 <div class="helpwritings">
 
@@ -166,5 +238,6 @@
 
             </div>
         </footer>
+        <script src="index.js"></script>
 </body>
 </html>

@@ -3,16 +3,108 @@
     margin: 0;
     padding: 0;
     line-height: 56px;
+    scroll-behavior: smooth;
 }
+span{
+    color: #34AB5B;
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+}
+#button1, #button2, #button3{
+    height: 10px;
+    width: 27px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 0px 10px;
+
+}
+.menuitems{
+    height: auto;
+}
+.aboutdropdown{
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    justify-content:flex-end;
+    z-index:1;
+
+}
+.aboutdropdown .container{
+    width: 200px;
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    background: rgba(40, 33, 25, 0.4);
+}
+.aboutdropdown ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    list-style: none;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+
+    
+}
+.popbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.mission, .values{
+    font-family: 'DM Sans', sans-serif;
+    /* height:513px ; */
+    width:763px ;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px 72px;
+    box-sizing: border-box;
+}
+.mission h3, .values h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: #34AB5B;
+}
+.mission p, .values p{ 
+    font-size: 20px;
+}
+
+.popbox2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 header{
     
-    background-image: url('Images/backgroungimg.png');
+    background-image: url('Images/slider.jpeg');
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     height: 100vh;
     margin-bottom: 118px;
 
 }
+
 .nav{
     display: flex;
     justify-content: center;
@@ -21,17 +113,19 @@ header{
     width: 100%;
     height: 148px;
     font-family: 'DM Sans', sans-serif;
-
+   
+    
 
 }
 .container{
-    width: 95%;
-    
+    width: 95%;    
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 .navbar img{
@@ -47,24 +141,45 @@ header{
     display: inline;
     margin:0px 34px;
 }
+.menuitems img{
+    height: 15px;
+    width: 15px;
+}
 .intro{
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    height: auto;
+    height: 70vh;
+}
+.intro .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+#slider2,#slider3{
+    display: none;
+
 }
 .writings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 0px 150px;
     box-sizing: border-box;
     line-height: 56px;
     font-family: 'Josefin Sans', sans-serif;
 
+
 }
 .writings h1{
     font-size: 40px;
     font-weight: 700;
-    margin: 60px 0px; 
+    margin: 60px 0px;
+
 }
 .writings h3{
     font-size:30px;
@@ -75,6 +190,7 @@ header{
     justify-content: center;
     height: auto;
     flex-wrap: wrap;
+    padding-top: 100px;
 
 }
 .contactinfo img{
@@ -131,6 +247,7 @@ section.services{
     display: flex;
     justify-content: center;
     line-height: 56px;
+    padding-top: 100px;
 }
 section.services .header{
     margin-top: 50px;
@@ -189,6 +306,7 @@ section.help{
     background-size: cover;
     display: flex;
     justify-content: center;
+    padding-top: 100px;
     
 }
 section.help .helpwritings{
@@ -271,229 +389,12 @@ footer .social img{
         line-height: 35px;
     }
     header{
-    
-        background-image: url('Images/backgroungimg.png');
+        background-image: url('Images/slider.png');
         background-repeat: no-repeat;
-        background-size:auto;
-        height: auto;
-        padding-bottom: 20px;
-        margin-bottom: 118px;
-    
-    }
-    .nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(40, 33, 25, 0.4);
-        width: 100%;
-        height: 100px;
-        font-family: 'DM Sans', sans-serif;
-    }
-    .navbar{
-        display: flex;
-        align-items: center;
-        
-    }
-    .navbar img{
-        height: 50px;
-        width: 50px;
-    }
-    .logo{
-        height: 50px;
-    }
-    .menuitems{
-        display: none;
-    }
-    .writings{
-        padding: 0px 0px;
-        box-sizing: border-box;
-        line-height: 56px;
-        font-family: 'Josefin Sans', sans-serif;
-        text-align: center;
-    
-    }
-    .writings h1{
-        font-size: 30px;
-        font-weight: 700;
-        margin: 60px 0px; 
-    }
-    .writings h3{
-        font-size:20px;
-        font-weight: 700;
-    }
-    .contactinfo{
-        display: flex;
-        justify-content: center;
-        height: auto;
-        flex-wrap: wrap;
-    
-    }
-    .contactinfo img{
-        margin-top: 20px;
-    }
-    
-    .contactinfo .container{
-        display: block;
-        justify-content: center;
-        align-items:center ;
-    }
-    .visitus,.contactus{
-        width: 100%;
-        text-align: center;
-        line-height: 56px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .visitus {
-        padding-right: 0px;
-        box-sizing: border-box;
-        
-    }
-    .contactus{
-        padding-left: 0px;
-        box-sizing: border-box;
-    }
-    .divider{
-        border: none;
-        border-bottom:solid 5px #B8ABA4;
-        border-radius: 0px;
-        height: 0px;
-        margin: 10px 0px;
-    }
-    .contactinfo iframe{
-        display: flex;
-        justify-content: center;
-        height: auto;
-        width: 100%;
-        margin-top: 50px;
-        margin-bottom: 35px;
-        border-radius: 30px;
-    }
-    section.services .box{
-        width: 368px;
-        /* margin: 0px 48px; */
-        background-color: white;
-        font-family: 'DM Sans', sans-serif;
-        font-size: 15px;
-        font-weight: 500;
-        color: #243529;
-        padding: 24px 70px;
-        box-sizing: border-box;
-        border-radius: 25px;
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-    
-    } 
-    section.services .service{
-        display: block;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    section.services{
-        background-color:#34AB5B;
-        display: flex;
-        justify-content: center;
-        line-height: 35px;
-    }
-    section.services .header{
-        margin-top: 50px;
-        text-align: center;
-        font-size: 29px;
-        color: white;
-        font-family: 'Josefin Sans', sans-serif;
-        margin-bottom: 88px;
-    
-    }
-    section.services .title h2{
-        text-align: center;
-        font-size: 25px;
-        color: white;
-        font-family: 'DM Sans', sans-serif;
-        letter-spacing: 0.01em;
-        margin-bottom: 24px;
-    
-    }
-    section.help .helpwritings h1{
-        /* margin: 0; */
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 29px;
-        color: white;
-        padding-top: 94px;
-    
-    }
-    section.help{
-        height: auto;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/help.jpeg);    
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        
-    }
-    section.help .helpwritings h1 span{
-        color:#34AB5B ;
-    }
-    
-    
-    
-    section.help .helpwritings p{
-        font-family: 'DM Sans';
-        font-size: 15px;
-        color: white;
-        padding-right: 0px;
-        box-sizing: border-box;
-        text-align: center;
-    
-    }
-    
-    section.help .helpwritings2{
-        font-family: 'DM Sans';
-        font-size: 15px;
-        color: white;
-        padding-right: 0;
-        box-sizing: border-box;
-        text-align: center;
-    
-    }
-    section.help .items{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    section.help .item{
-        width: 100%;
-    }
-    footer{
-        display: flex;
-        justify-content: center;
-    }
-    footer .writings{
-        padding: 0;
-        text-align: center;
-    }
-    footer .writings h1{
-        font-size: 20px;
-        margin: 10px 0px;
+        height: 100vh;
+        margin-bottom: 118px;  
     }
 
-    footer .social{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-        
-    }
-    footer .social img{
-        height: 30px;
-        width: 30px;
-        margin: 0px 27px;
-    }
-    .copyright{
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 10px;
-        font-weight: 400;
-        margin-bottom: 14px;
-    }
+
     
 }
