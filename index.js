@@ -7,12 +7,24 @@ let third = document.getElementById("slider3")
 let intro = document.getElementById("intro")
 let backgroundchanger = document.getElementById("backgroundchanger")
 let about = document.getElementById("about")
+let mobileabout = document.getElementById("mobileabout")
+
 let popbox = document.getElementById("popbox")
 let popbox2 = document.getElementById("popbox2")
 let arrow = document.getElementById("arrow")
+let menuitems = document.getElementById("menuitems")
 
 
 
+
+function unshow(){
+    popbox.style.display = "none"
+    popbox2.style.display = "none"
+    document.getElementById("body").style.overflow = "visible"
+
+    
+
+}
 
 function changer1(){
     first.style.display ="block"
@@ -70,22 +82,89 @@ function aboutDropdown(){
     }
     console.log('working')
 }
+function aboutDropdown2(){
+    if(mobileabout.style.display === "none"){
+        mobileabout.style.display = "flex";
+        document.getElementById("arrow").src ="images/arrow2/svg"
+    
+    }
+    else{
+        mobileabout.style.display = "none"
+        document.getElementById("arrow").src ="images/arrow1/svg"
+
+    }
+    console.log('working')
+}
+
 
 function Mission(){
     if(popbox.style.display === "none"){
         popbox.style.display = "flex"
+        document.getElementById("body").style.overflow = "hidden"
+        menuitems.style.display = "none"
+        mobileabout.style.display = "none"
     }
     else{
         popbox.style.display = "none"
+        document.getElementById("body").style.overflow = "visible"
+
     }
     console.log('working')
 }
 function values(){
     if(popbox2.style.display === "none"){
         popbox2.style.display = "flex"
+        document.getElementById("body").style.overflow = "hidden"
+        menuitems.style.display = "none"
+        mobileabout.style.display = "none"
+
     }
     else{
         popbox2.style.display = "none"
+        document.getElementById("body").style.overflow = "visible"
+
     }
     console.log('working')
+}
+
+
+let slide1 = document.getElementById("slide1")
+let slide2 = document.getElementById("slide2")
+let slide3 = document.getElementById("slide3")
+
+
+function slid1(){
+    slide1.style.display = "flex"
+    slide2.style.display = "none"
+    slide3.style.display = "none"
+    console.log("working")
+
+}
+function slid2(){
+    slide1.style.display = "none"
+    slide2.style.display = "flex"
+    slide3.style.display = "none"
+    console.log("working")
+
+
+
+}
+function slid3(){
+    slide1.style.display = "none"
+    slide2.style.display = "none"
+    slide3.style.display = "flex"
+    console.log("working")
+
+
+}
+
+function displays(){
+    if(menuitems.style.display === "none"){
+        menuitems.style.display = "flex"
+    }else{
+        menuitems.style.display = "none"
+        mobileabout.style.display = "none"
+
+    }
+
 }
