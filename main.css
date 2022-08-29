@@ -11,9 +11,11 @@
     /* display: flex;
     justify-content: center; */
 }
+
 .sticky{
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 
@@ -141,7 +143,7 @@ li#desktopdissappear{
 
     
 }
-#slider{
+/* #slider{
     display: flex;
     justify-content: center;
     scroll-behavior: smooth;
@@ -213,16 +215,11 @@ main .container{
     justify-content: center;
 
 }
-/* #slide1,#slide2,#slide3{
-    display: flex;
-    justify-content: center;
-
-} */
 
 #slider2,#slider3{
     display: none;
 
-}
+} */
 .writings{
     display: flex;
     justify-content: center;
@@ -664,53 +661,6 @@ footer .social img{
         margin-top: 250px;
         /* position: absolute;
         bottom: 20px; */
-    }
-    main{
-        /* height: 100%; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    main{
-        background-image: url('images/slider.jpeg');
-        height: 70vh;
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        color: white;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        overflow-y: hidden;
-    
-    
-    }
-    
-    main:nth-child(2){
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/slider2.jpeg);
-        display: none;
-        height: 70vh;
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-
-    
-    
-    }
-    
-    main:nth-child(3){
-        background: linear-gradient(0deg, rgba(138, 138, 138, 0.5), rgba(138, 138, 138, 0.5)), url(images/slider3.jpeg);
-        background-position: 25%;
-        background-size: cover;
-        display: none;
-    
-    }
-    .sliding {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: 300px;
     }
     .contactinfo .container{
         display: flex;
