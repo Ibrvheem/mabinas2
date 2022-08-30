@@ -22,7 +22,7 @@ html { overflow-y: scroll; }
 .carousel-cell {
   width: 100%;
   height: 100vh;
-  margin-right: 10px;
+  margin-right: 0px;
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/slider.jpeg);
   background-size:100% ;
   background-position: center;
@@ -37,7 +37,7 @@ html { overflow-y: scroll; }
 .carousel-cell:nth-child(2){
   width: 100%;
   height: 100vh;
-  margin-right: 10px;
+  margin-right: 0px;
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/slider2.jpeg);
   background-size:100% ;
   background-position: center;
@@ -47,7 +47,7 @@ html { overflow-y: scroll; }
 .carousel-cell:nth-child(3){
   width: 100%;
   height: 100vh;
-  margin-right: 10px;
+  margin-right: 0px;
   background: linear-gradient(0deg, rgba(138, 138, 138, 0.5), rgba(138, 138, 138, 0.5)), url(images/slider3.jpeg);
   background-size:100% ;
   background-position: center;
@@ -100,7 +100,7 @@ html { overflow-y: scroll; }
   .carousel-cell {
     width: 100%;
     height:60vh;
-    margin-right: 10px;
+    margin-right: 0px;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/slider.jpeg);
     background-size:100% ;
     background-position: top;
@@ -116,7 +116,7 @@ html { overflow-y: scroll; }
   .carousel-cell:nth-child(2){
     width: 100%;
     height: 60vh;
-    margin-right: 10px;
+    margin-right: 0px;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/slider2.jpeg);
     background-size:200% ;
     background-position: top;
@@ -127,7 +127,7 @@ html { overflow-y: scroll; }
   .carousel-cell:nth-child(3){
     width: 100%;
     height: 60vh;
-    margin-right: 10px;
+    margin-right: 0px;
     background: linear-gradient(0deg, rgba(138, 138, 138, 0.5), rgba(138, 138, 138, 0.5)), url(images/slider3.jpeg);
     background-size:200% ;
     background-position: top;

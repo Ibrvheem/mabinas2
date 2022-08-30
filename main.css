@@ -143,6 +143,13 @@ li#desktopdissappear{
 
     
 }
+.aboutdropdown a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
 /* #slider{
     display: flex;
     justify-content: center;
